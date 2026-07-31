@@ -1,6 +1,6 @@
 @echo off
 REM Deploy AI Test Data Generator as Windows Service
-REM This script sets up the service with automatic start and crash recovery
+REM If the executable is missing, build it with PyInstaller first, then install the service
 
 setlocal enabledelayedexpansion
 
@@ -12,7 +12,7 @@ echo.
 
 REM Check if running as administrator
 net session >nul 2>&1
-if %ERRORLEVEL% neq 0 (
+if errorlevel 1 (
     echo ERROR: This script must be run as Administrator!
     echo.
     echo Please:
@@ -26,47 +26,73 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-REM Check if nssm.exe exists
-if not exist "%~dp0nssm.exe" (
-    echo.
-    echo Step 1: Download NSSM (Non-Sucking Service Manager)
-    echo ========================================================
-    echo.
-    echo NSSM is required to install the service. Please download it manually:
-    echo.
-    echo 1. Visit: https://nssm.cc/download
-    echo 2. Download the latest version (e.g., nssm-2.24-101-g897c7f7.zip)
-    echo 3. Extract the ZIP file
-    echo 4. Copy nssm.exe from the win64 folder to this directory:
-    echo    %~dp0
-    echo.
-    echo Then run this script again.
-    echo.
+REM Configuration
+set "SCRIPT_DIR=%~dp0"
+set "SERVICE_NAME=AITestDataGenerator"
+set "SPEC_PATH=%SCRIPT_DIR%AI-TestData-Generator.spec"
+set "EXE_PATH=%SCRIPT_DIR%dist\AI-TestData-Generator.exe"
+set "NSSM_PATH=%SCRIPT_DIR%nssm.exe"
+set "LOG_DIR=C:\ProgramData\AITestDataGenerator\logs"
+
+@REM echo NSSM_PATH = [%NSSM_PATH%]
+
+@REM if exist "%NSSM_PATH%" (
+@REM     echo NSSM FOUND
+@REM ) else (
+@REM     echo NSSM NOT FOUND
+@REM )
+
+if exist "%NSSM_PATH%" (
+    echo NSSM check passed.
+) else (
+    echo ERROR: NSSM not found.
     pause
     exit /b 1
 )
 
-REM Configuration
-set SERVICE_NAME=AITestDataGenerator
-set EXE_PATH="%~dp0dist\AI-TestData-Generator.exe"
-set NSSM_PATH="%~dp0nssm.exe"
-set LOG_DIR=C:\ProgramData\AITestDataGenerator\logs
+echo Passed NSSM check.
+pause
 
-echo Step 1: Verify Executable
+echo Step 1: Verify or Build Executable
 echo ========================================================
-if not exist %EXE_PATH% (
+if not exist "%EXE_PATH%" (
     echo.
-    echo ERROR: Executable not found!
+    echo Executable not found: %EXE_PATH%
+    echo Building executable with PyInstaller...
+    echo.
+    pushd "%SCRIPT_DIR%"
+
+    where py >nul 2>&1
+    if not errorlevel 1 (
+        py -3 -m PyInstaller "%SPEC_PATH%" --clean
+    ) else (
+        python -m PyInstaller "%SPEC_PATH%" --clean
+    )
+
+    if errorlevel 1 (
+        echo ERROR: PyInstaller build failed.
+        popd
+        pause
+        exit /b 1
+    )
+
+    popd
+)
+
+if not exist "%EXE_PATH%" (
+    echo.
+    echo ERROR: Executable not found after build attempt!
     echo Expected: %EXE_PATH%
     echo.
     echo Please ensure:
-    echo   1. The .exe was built successfully (run: pyinstaller AI-TestData-Generator.spec)
-    echo   2. The executable is in the dist\ folder
+    echo   1. PyInstaller is installed
+    echo   2. The spec file is valid: %SPEC_PATH%
     echo.
     pause
     exit /b 1
 )
-echo ✓ Executable found: %EXE_PATH%
+
+echo ✓ Executable ready: %EXE_PATH%
 echo.
 
 echo Step 2: Create Log Directory
@@ -87,18 +113,18 @@ echo Logs:         %LOG_DIR%
 echo.
 
 REM Check if service already exists and remove it
-%NSSM_PATH% status "%SERVICE_NAME%" >nul 2>&1
-if %ERRORLEVEL% equ 0 (
+"%NSSM_PATH%" status "%SERVICE_NAME%" >nul 2>&1
+if not errorlevel 1 (
     echo Removing existing service...
     net stop "%SERVICE_NAME%" >nul 2>&1
-    %NSSM_PATH% remove "%SERVICE_NAME%" confirm >nul 2>&1
+    "%NSSM_PATH%" remove "%SERVICE_NAME%" confirm >nul 2>&1
     timeout /t 2 >nul
 )
 
 REM Install the service
 echo Installing service...
-%NSSM_PATH% install "%SERVICE_NAME%" %EXE_PATH%
-if %ERRORLEVEL% neq 0 (
+"%NSSM_PATH%" install "%SERVICE_NAME%" "%EXE_PATH%"
+if errorlevel 1 (
     echo ERROR: Failed to install service
     pause
     exit /b 1
@@ -106,18 +132,18 @@ if %ERRORLEVEL% neq 0 (
 
 REM Configure service startup
 echo Configuring auto-start on system boot...
-%NSSM_PATH% set "%SERVICE_NAME%" Start SERVICE_AUTO_START
+"%NSSM_PATH%" set "%SERVICE_NAME%" Start SERVICE_AUTO_START
 
 REM Configure restart on crash (5-second delay)
 echo Configuring crash recovery...
-%NSSM_PATH% set "%SERVICE_NAME%" AppRestartDelay 5000
+"%NSSM_PATH%" set "%SERVICE_NAME%" AppRestartDelay 5000
 
 REM Configure logging
 echo Configuring logging...
-%NSSM_PATH% set "%SERVICE_NAME%" AppStdout "%LOG_DIR%\service.log"
-%NSSM_PATH% set "%SERVICE_NAME%" AppStderr "%LOG_DIR%\service.log"
-%NSSM_PATH% set "%SERVICE_NAME%" AppStdoutCreationDisposition 4
-%NSSM_PATH% set "%SERVICE_NAME%" AppStderrCreationDisposition 4
+"%NSSM_PATH%" set "%SERVICE_NAME%" AppStdout "%LOG_DIR%\service.log"
+"%NSSM_PATH%" set "%SERVICE_NAME%" AppStderr "%LOG_DIR%\service.log"
+"%NSSM_PATH%" set "%SERVICE_NAME%" AppStdoutCreationDisposition 4
+"%NSSM_PATH%" set "%SERVICE_NAME%" AppStderrCreationDisposition 4
 
 REM Set service account
 echo Configuring service account (NETWORK SERVICE)...
@@ -126,8 +152,8 @@ sc config "%SERVICE_NAME%" obj= "NT AUTHORITY\NETWORK SERVICE" >nul 2>&1
 echo.
 echo Step 4: Verify Installation
 echo ========================================================
-%NSSM_PATH% status "%SERVICE_NAME%"
-if %ERRORLEVEL% neq 0 (
+"%NSSM_PATH%" status "%SERVICE_NAME%"
+if errorlevel 1 (
     echo ERROR: Service installation failed
     pause
     exit /b 1

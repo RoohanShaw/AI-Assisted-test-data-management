@@ -66,8 +66,12 @@ if /i "!COMMAND!"=="start" (
     if !ERRORLEVEL! equ 0 (
         echo Service Status: RUNNING ✓
         echo.
-        echo Testing API endpoint...
-        powershell -Command "try { $r = Invoke-WebRequest -Uri 'http://localhost:9090/docs' -UseBasicParsing -TimeoutSec 5; Write-Host 'API Response: $($r.StatusCode)' } catch { Write-Host 'API not responding' }" 2>nul
+        echo.
+        echo API Health Check:
+        echo   Health Endpoint: http://127.0.0.1:9090/api/v1/health
+        echo   Swagger UI:      http://127.0.0.1:9090/docs
+        echo   Open the health endpoint in your browser or Postman to verify the service is running.
+        echo.
     ) else (
         echo Service Status: STOPPED
     )
