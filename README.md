@@ -117,9 +117,21 @@ AI-TestData-Generator/
 
 Ensure you have Python 3.10+ installed on your system.
 
-1. **Activate the Virtual Environment:**
-   If you have a local virtual environment configured in the project directory, activate it:
-   
+### Fresh Clone Setup
+
+If you just cloned the repository, follow these steps:
+
+1. **Create a Python Virtual Environment:**
+   *Windows PowerShell:*
+   ```powershell
+   python -m venv venv
+   ```
+   *Linux/macOS:*
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. **Activate the Virtual Environment:**
    *Windows PowerShell:*
    ```powershell
    .\venv\Scripts\Activate.ps1
@@ -129,11 +141,31 @@ Ensure you have Python 3.10+ installed on your system.
    source venv/bin/activate
    ```
 
-2. **Install Dependencies:**
-   Run the following command to install required modules:
+3. **Install Dependencies:**
    ```bash
    pip install -r requirements_actual.txt
    ```
+
+### Build the Executable (Optional)
+
+To recreate the `dist/` and `build/` folders:
+```bash
+# Windows
+.\deploy.bat
+```
+
+---
+
+## Quick Start
+
+Once setup is complete, you can immediately run:
+```bash
+# Run smoke tests to verify installation
+python test_smoke.py
+
+# Start the web server
+python start.py
+```
 
 ---
 
@@ -265,6 +297,8 @@ Open `app/config.py` and modify `SIMILARITY_THRESHOLD`. The default is `0.82`.
 ### How to add new generator types:
 1. Declare your new generator key and constraints in `RULES` inside [rule_engine.py](file:///c:/Users/mirasha%20charunethra/Downloads/AI-TestData-Generator/AI-TestData-Generator/app/rule_engine.py).
 2. Write the corresponding mock value generation logic mapping to your generator key in [generator.py](file:///c:/Users/mirasha%20charunethra/Downloads/AI-TestData-Generator/AI-TestData-Generator/app/generator.py) (add it to the dispatch dictionary).
-#   A I - A s s i s t e d - t e s t - d a t a - m a n a g e m e n t  
- #   A I - A s s i s t e d - t e s t - d a t a - m a n a g e m e n t  
+#   A I - A s s i s t e d - t e s t - d a t a - m a n a g e m e n t 
+ 
+ #   A I - A s s i s t e d - t e s t - d a t a - m a n a g e m e n t 
+ 
  
