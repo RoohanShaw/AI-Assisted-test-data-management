@@ -1,0 +1,29 @@
+﻿# AI Test Data Generator â€” Python dependencies
+# Install with: pip install -r requirements.txt
+
+# â”€â”€ Web Framework â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# â”€â”€ Data Validation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+pydantic==2.10.3
+pydantic-settings==2.6.1
+
+# â”€â”€ AI / ML â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0.post1
+openai==1.57.0
+torch==2.5.1          # CPU build; remove and install torch[cuda] for GPU
+
+# â”€â”€ Data Generation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+faker==33.1.0
+
+# â”€â”€ HTTP Client (used by openai SDK) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+httpx==0.28.1
+
+# â”€â”€ Utilities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+python-dotenv==1.0.1
+numpy==1.26.4
+openpyxl
+python-multipart
+pyinstaller

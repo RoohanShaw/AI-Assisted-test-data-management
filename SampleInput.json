@@ -1,0 +1,3411 @@
+{
+    "Links": [],
+    "TestPackageType": 1,
+    "RecoveryScenarios": [],
+    "PackageName": "TP_AppointmentList",
+    "PackageType": "",
+    "TestSuites": [
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": true,
+            "TestSuiteName": "TS_01",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "3",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Appointment List - Search - Search",
+                            "Displayname": "Appointment List - Search - Search",
+                            "DisplayOnlyName": "Appointment List - Search - Search",
+                            "UniqueName": "Appointment List - Search",
+                            "IterationCount": "3",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment List",
+                                    "DisplayName": [
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [
+                                        "Download"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [
+                                        "Print"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Reg No / Name / Mobile / Token No / Doctor",
+                                    "DisplayName": [
+                                        "Reg No / Name / Mobile / Token No / Doctor"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Date of Birth",
+                                    "DisplayName": [
+                                        "Date of Birth"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Created Date Period",
+                                    "DisplayName": [
+                                        "Created Date Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Department",
+                                    "DisplayName": [
+                                        "Department"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "docselect",
+                                    "DisplayName": [
+                                        "Select Doctor"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Visit Type.",
+                                    "DisplayName": [
+                                        "Visit Type."
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment List",
+                                    "DisplayName": [
+                                        "Appointment List"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Reg No / Name / Mobile / Token No / Doctor",
+                                    "DisplayName": [
+                                        "Reg No / Name / Mobile / Token No / Doctor"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Date of Birth",
+                                    "DisplayName": [
+                                        "Date of Birth"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Created Date Period",
+                                    "DisplayName": [
+                                        "Created Date Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Department",
+                                    "DisplayName": [
+                                        "Department"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "docselect",
+                                    "DisplayName": [
+                                        "Select Doctor"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Visit Type.",
+                                    "DisplayName": [
+                                        "Visit Type."
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Appointment List - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Click on the Appointment button.",
+                            "ExpectedResult": "User should be able to click on the Appointment button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Input valid value in the  Reg No / Name / Mobile / Token No / Doctor field.",
+                            "ExpectedResult": "User should be able to input value for the Reg No / Name / Mobile / Token No / Doctor field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Input valid value in the  Date of Birth field.",
+                            "ExpectedResult": "User should be able to input value for the Date of Birth field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Select value from   Period field.",
+                            "ExpectedResult": "User should be able to select value for the Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 5",
+                            "UserAction": "Input valid value in the  Created Date Period field.",
+                            "ExpectedResult": "User should be able to input value for the Created Date Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 6",
+                            "UserAction": "Select value from   Department field.",
+                            "ExpectedResult": "User should be able to select value for the Department field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 7",
+                            "UserAction": "Select value from   Select Doctor field.",
+                            "ExpectedResult": "User should be able to select value for the Select Doctor field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 8",
+                            "UserAction": "Select value from   Visit Type. field.",
+                            "ExpectedResult": "User should be able to select value for the Visit Type. field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 9",
+                            "UserAction": "Click on the Search button.",
+                            "ExpectedResult": "User should be able to click on the Search button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 10",
+                            "UserAction": "Click on the Appointment List button.",
+                            "ExpectedResult": "User should be able to click on the Appointment List button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        },
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": false,
+            "TestSuiteName": "TS_2",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Appointment Referral - Search - Search",
+                            "Displayname": "Appointment Referral - Search - Search",
+                            "DisplayOnlyName": "Appointment Referral - Search - Search",
+                            "UniqueName": "Appointment Referral - Search",
+                            "IterationCount": "",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment",
+                                        "",
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment",
+                                        "",
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Referral",
+                                    "DisplayName": [
+                                        "Appointment Referral",
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment",
+                                        "",
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Referral",
+                                    "DisplayName": [
+                                        "Appointment Referral",
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [
+                                        "Download"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [
+                                        "Print"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "type",
+                                    "DisplayName": [
+                                        "Type"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "status",
+                                    "DisplayName": [
+                                        "Status"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "priority",
+                                    "DisplayName": [
+                                        "Priority"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "regId",
+                                    "DisplayName": [
+                                        "Reg. No"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mobile",
+                                    "DisplayName": [
+                                        "Mobile"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Referral",
+                                    "DisplayName": [
+                                        "Appointment Referral"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "type",
+                                    "DisplayName": [
+                                        "Type"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "status",
+                                    "DisplayName": [
+                                        "Status"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "priority",
+                                    "DisplayName": [
+                                        "Priority"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "regId",
+                                    "DisplayName": [
+                                        "Reg. No"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mobile",
+                                    "DisplayName": [
+                                        "Mobile"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Appointment Referral - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Select value from   Period field.",
+                            "ExpectedResult": "User should be able to select value for the Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Select value from   Type field.",
+                            "ExpectedResult": "User should be able to select value for the Type field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Select value from   Status field.",
+                            "ExpectedResult": "User should be able to select value for the Status field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Select value from   Priority field.",
+                            "ExpectedResult": "User should be able to select value for the Priority field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 5",
+                            "UserAction": "Input valid value in the  Reg. No field.",
+                            "ExpectedResult": "User should be able to input value for the Reg. No field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 6",
+                            "UserAction": "Input valid value in the  Mobile field.",
+                            "ExpectedResult": "User should be able to input value for the Mobile field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 7",
+                            "UserAction": "Click on the Search button.",
+                            "ExpectedResult": "User should be able to click on the Search button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 8",
+                            "UserAction": "Click on the Appointment button.",
+                            "ExpectedResult": "User should be able to click on the Appointment button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 9",
+                            "UserAction": "Click on the Appointment Referral button.",
+                            "ExpectedResult": "User should be able to click on the Appointment Referral button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        },
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": true,
+            "TestSuiteName": "TS_3",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "2",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Doctor List - Search - Search",
+                            "Displayname": "Doctor List - Search - Search",
+                            "DisplayOnlyName": "Doctor List - Search - Search",
+                            "UniqueName": "Doctor List - Search",
+                            "IterationCount": "2",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Doctor List",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Add Physician",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select Department",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select physician",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Doctor List",
+                                    "DisplayName": [
+                                        "Doctor List"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select Department",
+                                    "DisplayName": [
+                                        "Select Department"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select physician",
+                                    "DisplayName": [
+                                        "Select physician"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Doctor List - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Click on the Appointment button.",
+                            "ExpectedResult": "User should be able to click on the Appointment button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Click on the Doctor List button.",
+                            "ExpectedResult": "User should be able to click on the Doctor List button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Select value from   Select Department field.",
+                            "ExpectedResult": "User should be able to select value for the Select Department field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Select value from   Select physician field.",
+                            "ExpectedResult": "User should be able to select value for the Select physician field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 5",
+                            "UserAction": "Input valid value in the  Search field.",
+                            "ExpectedResult": "User should be able to input value for the Search field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        },
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": false,
+            "TestSuiteName": "TS_4",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Appointment Reminder - Search - Search",
+                            "Displayname": "Appointment Reminder - Search - Search",
+                            "DisplayOnlyName": "Appointment Reminder - Search - Search",
+                            "UniqueName": "Appointment Reminder - Search",
+                            "IterationCount": "",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        ""
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Reminder",
+                                    "DisplayName": [
+                                        "Appointment Reminder"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [
+                                        "Appointment"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Reminder",
+                                    "DisplayName": [
+                                        "Appointment Reminder"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Appointment Reminder - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Click on the Appointment Reminder button.",
+                            "ExpectedResult": "User should be able to click on the Appointment Reminder button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Select value from   Period field.",
+                            "ExpectedResult": "User should be able to select value for the Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Click on the Search button.",
+                            "ExpectedResult": "User should be able to click on the Search button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Click on the Appointment button.",
+                            "ExpectedResult": "User should be able to click on the Appointment button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        },
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": false,
+            "TestSuiteName": "TS_5",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Patient Insights - Search - Search",
+                            "Displayname": "Patient Insights - Search - Search",
+                            "DisplayOnlyName": "Patient Insights - Search - Search",
+                            "UniqueName": "Patient Insights - Search",
+                            "IterationCount": "",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Patient Insights",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "searchWord",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "regNum",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "tokenNumber",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mobileNum",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "departmentId",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "doctorId",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "visitType",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "patientType",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "status",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Patient Insights",
+                                    "DisplayName": [
+                                        "Patient Insights"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "searchWord",
+                                    "DisplayName": [
+                                        "Doctor / Department / Patient Name"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "regNum",
+                                    "DisplayName": [
+                                        "Reg No"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "tokenNumber",
+                                    "DisplayName": [
+                                        "Token Number"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mobileNum",
+                                    "DisplayName": [
+                                        "Mobile"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Period",
+                                    "DisplayName": [
+                                        "Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "departmentId",
+                                    "DisplayName": [
+                                        "Department"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "doctorId",
+                                    "DisplayName": [
+                                        "Select Doctor"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "visitType",
+                                    "DisplayName": [
+                                        "Visit Type"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "patientType",
+                                    "DisplayName": [
+                                        "Patient Type"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "status",
+                                    "DisplayName": [
+                                        "Status"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Patient Insights - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Click on the Patient Insights button.",
+                            "ExpectedResult": "User should be able to click on the Patient Insights button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Input valid value in the  Doctor / Department / Patient Name field.",
+                            "ExpectedResult": "User should be able to input value for the Doctor / Department / Patient Name field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Input valid value in the  Reg No field.",
+                            "ExpectedResult": "User should be able to input value for the Reg No field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Input valid value in the  Token Number field.",
+                            "ExpectedResult": "User should be able to input value for the Token Number field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 5",
+                            "UserAction": "Input valid value in the  Mobile field.",
+                            "ExpectedResult": "User should be able to input value for the Mobile field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 6",
+                            "UserAction": "Select value from   Period field.",
+                            "ExpectedResult": "User should be able to select value for the Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 7",
+                            "UserAction": "Select value from   Department field.",
+                            "ExpectedResult": "User should be able to select value for the Department field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 8",
+                            "UserAction": "Select value from   Select Doctor field.",
+                            "ExpectedResult": "User should be able to select value for the Select Doctor field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 9",
+                            "UserAction": "Select value from   Visit Type field.",
+                            "ExpectedResult": "User should be able to select value for the Visit Type field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 10",
+                            "UserAction": "Select value from   Patient Type field.",
+                            "ExpectedResult": "User should be able to select value for the Patient Type field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 11",
+                            "UserAction": "Select value from   Status field.",
+                            "ExpectedResult": "User should be able to select value for the Status field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 12",
+                            "UserAction": "Click on the Search button.",
+                            "ExpectedResult": "User should be able to click on the Search button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        },
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": true,
+            "TestSuiteName": "TS_6",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "2",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Cancelled Appointment - Search - Search",
+                            "Displayname": "Cancelled Appointment - Search - Search",
+                            "DisplayOnlyName": "Cancelled Appointment - Search - Search",
+                            "UniqueName": "Cancelled Appointment - Search",
+                            "IterationCount": "2",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Cancelled Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Reg ID",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Mobile No",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Date Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Cancelled Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Reg ID",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Mobile No",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Date Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Cancelled Date Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-2",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-3",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Patient Type",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select Reason",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Name",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Cancelled Date Period",
+                                    "DisplayName": [
+                                        "Cancelled Date Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-2",
+                                    "DisplayName": [
+                                        "Department"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-3",
+                                    "DisplayName": [
+                                        "Physician"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Patient Type",
+                                    "DisplayName": [
+                                        "Patient Type"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select Reason",
+                                    "DisplayName": [
+                                        "Select Reason"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Name",
+                                    "DisplayName": [
+                                        "Name"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Cancelled Appointment - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Input valid value in the  Cancelled Date Period field.",
+                            "ExpectedResult": "User should be able to input value for the Cancelled Date Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Input valid value in the  Department field.",
+                            "ExpectedResult": "User should be able to input value for the Department field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Input valid value in the  Physician field.",
+                            "ExpectedResult": "User should be able to input value for the Physician field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Select value from   Patient Type field.",
+                            "ExpectedResult": "User should be able to select value for the Patient Type field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 5",
+                            "UserAction": "Select value from   Select Reason field.",
+                            "ExpectedResult": "User should be able to select value for the Select Reason field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 6",
+                            "UserAction": "Input valid value in the  Name field.",
+                            "ExpectedResult": "User should be able to input value for the Name field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 7",
+                            "UserAction": "Click on the Search button.",
+                            "ExpectedResult": "User should be able to click on the Search button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        },
+        {
+            "TestSuiteType": 1,
+            "IsNewTcCreated": false,
+            "IsIterationEnabled": false,
+            "TestSuiteName": "TS_7",
+            "SelectedTestSuite": [
+                {
+                    "IsSource": false,
+                    "TestSuiteNameForReference": "",
+                    "TestSuiteScenarioIdForReference": "",
+                    "IntegrationTestSuiteNameForReference": "",
+                    "IntegrationTestSuiteScenarioIdForReference": "",
+                    "FlowType": 1,
+                    "FlowTypeName": "",
+                    "FlowId": 1,
+                    "SelectedScenario": true,
+                    "IterationCount": "",
+                    "CustomTemplate": false,
+                    "ScenarioId": "TestScenario_1",
+                    "SeleniumExecutionFlow": [
+                        {
+                            "WorkFlowList": [],
+                            "Name": "Cancelled Appointment - Search - Search",
+                            "Displayname": "Cancelled Appointment - Search - Search",
+                            "DisplayOnlyName": "Cancelled Appointment - Search - Search",
+                            "UniqueName": "Cancelled Appointment - Search",
+                            "IterationCount": "",
+                            "Level": 0,
+                            "Order": 0,
+                            "DependencyFlow": "",
+                            "Fields": [
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Cancelled Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": true,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Reg ID",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Mobile No",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Date Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Cancelled Appointment",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Download",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Print",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Reg ID",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Mobile No",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Appointment Date Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Cancelled Date Period",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-2",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-3",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Patient Type",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select Reason",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Name",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "FieldsByDropdowns": [],
+                            "LookupFields": [],
+                            "Actions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedActions": [
+                                {
+                                    "Name": "View",
+                                    "Condition": "",
+                                    "IsDependencyViolator": false
+                                }
+                            ],
+                            "SelectedFields": [
+                                {
+                                    "Name": "Cancelled Date Period",
+                                    "DisplayName": [
+                                        "Cancelled Date Period"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 9,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-2",
+                                    "DisplayName": [
+                                        "Department"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "mat-select-3",
+                                    "DisplayName": [
+                                        "Physician"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Patient Type",
+                                    "DisplayName": [
+                                        "Patient Type"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Select Reason",
+                                    "DisplayName": [
+                                        "Select Reason"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 11,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Name",
+                                    "DisplayName": [
+                                        "Name"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 6,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                },
+                                {
+                                    "Name": "Search",
+                                    "DisplayName": [
+                                        "Search"
+                                    ],
+                                    "Formula": "",
+                                    "Type": 24,
+                                    "IsNavigation": false,
+                                    "IsMandatory": false,
+                                    "IsLookupon": false,
+                                    "DependantOn": "",
+                                    "FieldDependencyFlow": ""
+                                }
+                            ],
+                            "SelectedDropdownFields": [],
+                            "DependencyList": [],
+                            "IsApprovalReq": false,
+                            "IsEscalationReq": false,
+                            "IsSubmitApprovalColRequired": false,
+                            "IsManuallyChoosen": false,
+                            "IsAssignmentRulesReq": false,
+                            "WorkFlowRuleData": [],
+                            "IsWorkFlowExist": false,
+                            "ApprovalFieldslList": [],
+                            "ApprovalProcessesWithCriteriaList": [],
+                            "AssignmentRulesFieldslList": [],
+                            "TabOptionSelected": false,
+                            "Tabs": [],
+                            "DropdownInformation": []
+                        }
+                    ],
+                    "ObjectName": "",
+                    "DtMapTestCseToFlow": [],
+                    "DtCaseFlow": [
+                        {
+                            "TestScenarioID": "TestScenario_1",
+                            "TestCaseID": "TestScenario_1.TestCase_1",
+                            "Description": "View Cancelled Appointment - Search - Search",
+                            "Precondition": "User Needs to Login to Ezovion Platform, from the browser with correct credentials",
+                            "TestData": "",
+                            "Steps": "Step 1",
+                            "UserAction": "Input valid value in the  Cancelled Date Period field.",
+                            "ExpectedResult": "User should be able to input value for the Cancelled Date Period field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 2",
+                            "UserAction": "Input valid value in the  Department field.",
+                            "ExpectedResult": "User should be able to input value for the Department field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 3",
+                            "UserAction": "Input valid value in the  Physician field.",
+                            "ExpectedResult": "User should be able to input value for the Physician field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 4",
+                            "UserAction": "Select value from   Patient Type field.",
+                            "ExpectedResult": "User should be able to select value for the Patient Type field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 5",
+                            "UserAction": "Select value from   Select Reason field.",
+                            "ExpectedResult": "User should be able to select value for the Select Reason field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 6",
+                            "UserAction": "Input valid value in the  Name field.",
+                            "ExpectedResult": "User should be able to input value for the Name field.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "Step 7",
+                            "UserAction": "Click on the Search button.",
+                            "ExpectedResult": "User should be able to click on the Search button.",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        },
+                        {
+                            "TestScenarioID": "",
+                            "TestCaseID": "",
+                            "Description": "",
+                            "Precondition": "",
+                            "TestData": "",
+                            "Steps": "",
+                            "UserAction": "",
+                            "ExpectedResult": "",
+                            "Approved/Rejected": "",
+                            "ReasonToReject": "",
+                            "IsModified/Added": null
+                        }
+                    ],
+                    "Dt1CaseFlow": [],
+                    "VerficationStatus": 1,
+                    "DataSheetName": "",
+                    "RejectComment": "",
+                    "ContextApplication": "standard-Appointment",
+                    "RequestType": "",
+                    "RequestName": "",
+                    "RequestStatus": "",
+                    "RequestTime": "",
+                    "RequestSize": "",
+                    "JiraReqLinkId": "",
+                    "JiraReqTool": "",
+                    "RequestTestResults": [],
+                    "OcrText": "",
+                    "OcrFilePathIp": "",
+                    "TestCaseAuthenticationType": "",
+                    "TestCaseApplicationType": "",
+                    "TestCaseApplication": "",
+                    "TestCaseSandboxUrl": "",
+                    "TestCaseUserName": "",
+                    "TestCasePassword": "",
+                    "TestCaseSelectedTabs": [],
+                    "TestCasePageUrl": "",
+                    "multipleTestCaseXPaths": null
+                }
+            ],
+            "TestCases": [],
+            "PathofUploadedFile": "",
+            "ApplicationType": "",
+            "ApplicationName": "",
+            "SandboxUrl": "",
+            "Username": "",
+            "Password": "",
+            "ReferenceScenarioNumber": "",
+            "OrderedScenarios": [],
+            "ModifiedOn": "26-05-2026"
+        }
+    ],
+    "PackageCreatedDate": "26 May 2026 02.24.21 PM",
+    "PackageCreatedBy": "Rookierohan",
+    "PackageModifiedDate": "",
+    "PackageModifiedBy": "",
+    "PackageFirstSentDate": "",
+    "PackageTimeTakenforSent": "",
+    "PackageSentDate": "",
+    "PackageExecutionDone": false,
+    "PackageCreationDone": true,
+    "PackageIsModified": true,
+    "PackageTestcaseDefect": 0,
+    "ApplicationId": 0,
+    "Packages": [],
+    "PackageStatus": 2,
+    "PackageEarlierStatus": "Draft",
+    "ExecuteData": [],
+    "PackageTotalTestcase": 0,
+    "PackageTotalExecuted": 0,
+    "PackageTotalPending": 0,
+    "PackageTotalCount": 0,
+    "PackagePendingCount": 0,
+    "PackageTotalTestsuite": 0,
+    "PackageTotalTSPending": 0,
+    "PackagePassCount": 0,
+    "PackageFailCount": 0,
+    "PackageNorunCount": 0,
+    "DtCaseFlowStatus": []
+}

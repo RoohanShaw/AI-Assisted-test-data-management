@@ -1,0 +1,302 @@
+{
+  "appointment list": {
+    "field_name": "Appointment List",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "download": {
+    "field_name": "Download",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "print": {
+    "field_name": "Print",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "reg no / name / mobile / token no / doctor": {
+    "field_name": "Reg No / Name / Mobile / Token No / Doctor",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "date of birth": {
+    "field_name": "Date of Birth",
+    "category": "Date of Birth",
+    "generator": "dob",
+    "source": "faiss"
+  },
+  "period": {
+    "field_name": "Period",
+    "category": "Generic Date",
+    "generator": "generic_date",
+    "source": "fallback"
+  },
+  "created date period": {
+    "field_name": "Created Date Period",
+    "category": "Generic Date",
+    "generator": "generic_date",
+    "source": "fallback"
+  },
+  "department": {
+    "field_name": "Department",
+    "category": "Department",
+    "generator": "department",
+    "source": "faiss"
+  },
+  "select doctor": {
+    "field_name": "Select Doctor",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "visit type.": {
+    "field_name": "Visit Type.",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "search": {
+    "field_name": "Search",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "appointment": {
+    "field_name": "Appointment",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "appointment referral": {
+    "field_name": "Appointment Referral",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "type": {
+    "field_name": "Type",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "status": {
+    "field_name": "Status",
+    "category": "Status",
+    "generator": "status",
+    "source": "faiss"
+  },
+  "priority": {
+    "field_name": "Priority",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "reg. no": {
+    "field_name": "Reg. No",
+    "category": "Patient ID",
+    "generator": "patient_id",
+    "source": "fallback"
+  },
+  "mobile": {
+    "field_name": "Mobile",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "faiss"
+  },
+  "add physician": {
+    "field_name": "Add Physician",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "select department": {
+    "field_name": "Select Department",
+    "category": "Department",
+    "generator": "department",
+    "source": "fallback"
+  },
+  "select physician": {
+    "field_name": "Select physician",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "searchword": {
+    "field_name": "searchWord",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "regnum": {
+    "field_name": "regNum",
+    "category": "Patient ID",
+    "generator": "patient_id",
+    "source": "fallback"
+  },
+  "tokennumber": {
+    "field_name": "tokenNumber",
+    "category": "Unique Identifier",
+    "generator": "uuid",
+    "source": "fallback"
+  },
+  "mobilenum": {
+    "field_name": "mobileNum",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "faiss"
+  },
+  "departmentid": {
+    "field_name": "departmentId",
+    "category": "Department",
+    "generator": "department",
+    "source": "faiss"
+  },
+  "doctorid": {
+    "field_name": "doctorId",
+    "category": "Unique Identifier",
+    "generator": "uuid",
+    "source": "fallback"
+  },
+  "visittype": {
+    "field_name": "visitType",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "patienttype": {
+    "field_name": "patientType",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "reg id": {
+    "field_name": "Reg ID",
+    "category": "Unique Identifier",
+    "generator": "uuid",
+    "source": "fallback"
+  },
+  "mobile no": {
+    "field_name": "Mobile No",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "appointment date period": {
+    "field_name": "Appointment Date Period",
+    "category": "Generic Date",
+    "generator": "generic_date",
+    "source": "fallback"
+  },
+  "cancelled appointment": {
+    "field_name": "Cancelled Appointment",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "cancelled date period": {
+    "field_name": "Cancelled Date Period",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "mat-select-2": {
+    "field_name": "mat-select-2",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "mat-select-3": {
+    "field_name": "mat-select-3",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "patient type": {
+    "field_name": "Patient Type",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "select reason": {
+    "field_name": "Select Reason",
+    "category": "Status",
+    "generator": "status",
+    "source": "fallback"
+  },
+  "name": {
+    "field_name": "Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "faiss"
+  },
+  "doctor / department / patient name": {
+    "field_name": "Doctor / Department / Patient Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "patient name": {
+    "field_name": "Patient Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "faiss"
+  },
+  "age": {
+    "field_name": "Age",
+    "category": "Human Age",
+    "generator": "age",
+    "source": "faiss"
+  },
+  "salary": {
+    "field_name": "Salary",
+    "category": "Employee Salary",
+    "generator": "salary",
+    "source": "faiss"
+  },
+  "mrn": {
+    "field_name": "MRN",
+    "category": "Medical Record Number",
+    "generator": "mrn",
+    "source": "faiss"
+  },
+  "gender": {
+    "field_name": "Gender",
+    "category": "Gender",
+    "generator": "gender",
+    "source": "faiss"
+  },
+  "phone number": {
+    "field_name": "Phone Number",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "faiss"
+  },
+  "email": {
+    "field_name": "Email",
+    "category": "Email Address",
+    "generator": "email",
+    "source": "faiss"
+  },
+  "address": {
+    "field_name": "Address",
+    "category": "Street Address",
+    "generator": "address",
+    "source": "faiss"
+  },
+  "dob": {
+    "field_name": "DOB",
+    "category": "Date of Birth",
+    "generator": "dob",
+    "source": "faiss"
+  },
+  "blood group": {
+    "field_name": "Blood Group",
+    "category": "Blood Group",
+    "generator": "blood_group",
+    "source": "faiss"
+  }
+}

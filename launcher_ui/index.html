@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI TestData Generator — Launcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset & base ───────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #09090f;
+      --bg2:         #0f0f1a;
+      --bg3:         #151525;
+      --border:      rgba(255,255,255,0.08);
+      --border-glow: rgba(99,102,241,0.35);
+
+      --purple:      #6366f1;
+      --purple-lite: #818cf8;
+      --cyan:        #22d3ee;
+      --green:       #10b981;
+      --yellow:      #f59e0b;
+      --red:         #ef4444;
+
+      --text:        #e2e8f0;
+      --text-muted:  #64748b;
+      --text-dim:    #94a3b8;
+
+      --radius:      14px;
+      --radius-sm:   8px;
+      --glow-purple: 0 0 40px rgba(99,102,241,0.15);
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── Animated background ────────────────────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 900px 500px at 20% 10%, rgba(99,102,241,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 700px 400px at 80% 80%, rgba(34,211,238,0.04) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Grid noise overlay ─────────────────────────────────────── */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Layout ─────────────────────────────────────────────────── */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────── */
+    .header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: rgba(99,102,241,0.12);
+      border: 1px solid rgba(99,102,241,0.3);
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--purple-lite);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .badge-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--purple);
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    .header h1 {
+      font-size: clamp(28px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      background: linear-gradient(135deg, #fff 0%, var(--purple-lite) 50%, var(--cyan) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+
+    .header p {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 460px;
+      margin: 0 auto;
+    }
+
+    /* ── Status bar ─────────────────────────────────────────────── */
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 40px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 7px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.4s ease;
+    }
+
+    .status-pill.running {
+      background: rgba(99,102,241,0.15);
+      border: 1px solid rgba(99,102,241,0.4);
+      color: var(--purple-lite);
+    }
+    .status-pill.done {
+      background: rgba(16,185,129,0.15);
+      border: 1px solid rgba(16,185,129,0.4);
+      color: var(--green);
+    }
+    .status-pill.error {
+      background: rgba(239,68,68,0.15);
+      border: 1px solid rgba(239,68,68,0.4);
+      color: var(--red);
+    }
+    .status-pill.starting {
+      background: rgba(100,116,139,0.15);
+      border: 1px solid rgba(100,116,139,0.3);
+      color: var(--text-muted);
+    }
+
+    .spinner {
+      width: 14px; height: 14px;
+      border: 2px solid rgba(99,102,241,0.3);
+      border-top-color: var(--purple);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Steps grid ─────────────────────────────────────────────── */
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .step-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      transition: border-color 0.3s, box-shadow 0.3s, transform 0.2s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      border-radius: 3px 0 0 3px;
+      background: transparent;
+      transition: background 0.3s;
+    }
+
+    .step-card.state-pending  { opacity: 0.45; }
+    .step-card.state-running  {
+      border-color: rgba(99,102,241,0.4);
+      box-shadow: var(--glow-purple);
+      transform: translateX(4px);
+      opacity: 1;
+    }
+    .step-card.state-running::before  { background: var(--purple); }
+
+    .step-card.state-done {
+      border-color: rgba(16,185,129,0.3);
+      opacity: 1;
+    }
+    .step-card.state-done::before { background: var(--green); }
+
+    .step-card.state-warn {
+      border-color: rgba(245,158,11,0.3);
+      opacity: 1;
+    }
+    .step-card.state-warn::before { background: var(--yellow); }
+
+    .step-card.state-error {
+      border-color: rgba(239,68,68,0.35);
+      box-shadow: 0 0 30px rgba(239,68,68,0.1);
+      opacity: 1;
+    }
+    .step-card.state-error::before { background: var(--red); }
+
+    /* step icon */
+    .step-icon {
+      width: 40px; height: 40px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .step-card.state-running .step-icon {
+      background: rgba(99,102,241,0.15);
+      border-color: rgba(99,102,241,0.3);
+    }
+    .step-card.state-done .step-icon {
+      background: rgba(16,185,129,0.12);
+      border-color: rgba(16,185,129,0.25);
+    }
+    .step-card.state-warn .step-icon {
+      background: rgba(245,158,11,0.12);
+      border-color: rgba(245,158,11,0.25);
+    }
+    .step-card.state-error .step-icon {
+      background: rgba(239,68,68,0.12);
+      border-color: rgba(239,68,68,0.25);
+    }
+
+    /* step body */
+    .step-body { flex: 1; min-width: 0; }
+
+    .step-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .step-label {
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .step-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 9px;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    }
+
+    .step-badge.pending  { background: rgba(100,116,139,0.15); color: var(--text-muted); }
+    .step-badge.running  { background: rgba(99,102,241,0.2);   color: var(--purple-lite); }
+    .step-badge.done     { background: rgba(16,185,129,0.15);  color: var(--green); }
+    .step-badge.warn     { background: rgba(245,158,11,0.15);  color: var(--yellow); }
+    .step-badge.error    { background: rgba(239,68,68,0.15);   color: var(--red); }
+
+    .step-last-log {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      margin-top: 2px;
+      height: 18px;
+    }
+    .step-card.state-running .step-last-log { color: var(--text-dim); }
+    .step-card.state-done    .step-last-log { color: var(--green); opacity: 0.8; }
+    .step-card.state-error   .step-last-log { color: var(--red); opacity: 0.85; }
+
+    /* ── Console log panel ──────────────────────────────────────── */
+    .console-section {
+      margin-bottom: 36px;
+    }
+
+    .console-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .console-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .console {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      height: 200px;
+      overflow-y: auto;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      line-height: 1.7;
+      color: var(--text-dim);
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255,255,255,0.1) transparent;
+    }
+
+    .console::-webkit-scrollbar { width: 5px; }
+    .console::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+
+    .log-line { display: block; padding: 1px 0; }
+    .log-line.success { color: var(--green); }
+    .log-line.error   { color: var(--red); }
+    .log-line.warn    { color: var(--yellow); }
+    .log-line.cmd     { color: var(--purple-lite); }
+    .log-line.info    { color: var(--cyan); }
+
+    /* ── CTA ─────────────────────────────────────────────────────── */
+    .cta-section {
+      text-align: center;
+      padding: 36px 24px;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all 0.5s ease;
+      display: none;
+    }
+
+    .cta-section.visible { display: block; }
+    .cta-section.error-state {
+      border-color: rgba(239,68,68,0.3);
+      background: rgba(239,68,68,0.04);
+    }
+
+    .cta-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--green), var(--cyan));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .cta-section.error-state .cta-title {
+      background: linear-gradient(135deg, var(--red), var(--yellow));
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .cta-sub {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    .btn-open {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--purple) 0%, var(--cyan) 100%);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 13px 32px;
+      font-family: inherit;
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 4px 24px rgba(99,102,241,0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-open:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(99,102,241,0.5);
+    }
+    .btn-open:active { transform: translateY(0); }
+
+    /* ── Progress bar (overall) ─────────────────────────────────── */
+    .progress-wrap {
+      height: 3px;
+      background: var(--border);
+      border-radius: 3px;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, var(--purple), var(--cyan));
+      transition: width 0.6s ease;
+      box-shadow: 0 0 12px rgba(99,102,241,0.5);
+    }
+
+    /* ── Decorative connection lines ────────────────────────────── */
+    .steps-connector {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    /* ── Animations ─────────────────────────────────────────────── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .container > * {
+      animation: fadeInUp 0.5s ease both;
+    }
+    .header       { animation-delay: 0.05s; }
+    .status-bar   { animation-delay: 0.10s; }
+    .progress-wrap { animation-delay: 0.15s; }
+    .steps        { animation-delay: 0.20s; }
+    .console-section { animation-delay: 0.25s; }
+    .cta-section  { animation-delay: 0.30s; }
+
+    /* ── Responsive ─────────────────────────────────────────────── */
+    @media (max-width: 640px) {
+      .container { padding: 32px 16px 60px; }
+      .step-card { padding: 16px; gap: 12px; }
+      .step-icon { width: 34px; height: 34px; font-size: 16px; }
+    }
+
+    /* ── Confetti burst on done ─────────────────────────────────── */
+    .confetti-canvas {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        AI TestData Generator
+      </div>
+      <h1>Setting up your environment</h1>
+      <p>Sit back while we prepare everything automatically in the background.</p>
+    </div>
+
+    <!-- Status pill -->
+    <div class="status-bar">
+      <div class="status-pill starting" id="globalStatus">
+        <div class="spinner" id="globalSpinner"></div>
+        <span id="globalStatusText">Initialising…</span>
+      </div>
+    </div>
+
+    <!-- Overall progress bar -->
+    <div class="progress-wrap">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Steps -->
+    <div class="steps" id="stepsContainer">
+      <!-- Populated by JS -->
+    </div>
+
+    <!-- Console log -->
+    <div class="console-section">
+      <div class="console-label">📋 Live Output</div>
+      <div class="console" id="consoleOutput">
+        <span class="log-line info">Launcher started. Waiting for background tasks…</span>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-section" id="ctaSection">
+      <div class="cta-title" id="ctaTitle">🚀 Application Ready!</div>
+      <div class="cta-sub" id="ctaSub">Your AI TestData Generator is running. Click below to open the API.</div>
+      <a href="http://127.0.0.1:8000/docs" target="_blank" class="btn-open" id="ctaBtn">
+        Open App → Swagger UI
+        <span>↗</span>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // ── Config ────────────────────────────────────────────────────
+    const POLL_MS = 1000;
+
+    const STEP_META = {
+      vscode:  { icon: '🖥️',  label: 'Open VS Code' },
+      venv:    { icon: '🐍',  label: 'Create virtual env' },
+      install: { icon: '📦',  label: 'Install dependencies' },
+      smoke:   { icon: '🔬',  label: 'Run smoke tests' },
+      launch:  { icon: '🚀',  label: 'Launch application' },
+    };
+
+    // ── State ─────────────────────────────────────────────────────
+    let prevLogs = {};  // step_id -> last seen log length
+    let confettiFired = false;
+    let prevPhase = '';
+
+    // ── DOM refs ──────────────────────────────────────────────────
+    const stepsContainer = document.getElementById('stepsContainer');
+    const consoleOutput  = document.getElementById('consoleOutput');
+    const globalStatus   = document.getElementById('globalStatus');
+    const globalSpinner  = document.getElementById('globalSpinner');
+    const globalStatusText = document.getElementById('globalStatusText');
+    const progressBar    = document.getElementById('progressBar');
+    const ctaSection     = document.getElementById('ctaSection');
+    const ctaTitle       = document.getElementById('ctaTitle');
+    const ctaSub         = document.getElementById('ctaSub');
+    const ctaBtn         = document.getElementById('ctaBtn');
+
+    // ── Build initial step cards ──────────────────────────────────
+    function buildCards(steps) {
+      stepsContainer.innerHTML = '';
+      steps.forEach(step => {
+        const meta = STEP_META[step.id] || { icon: '⚙️', label: step.label };
+        const card = document.createElement('div');
+        card.className = `step-card state-${step.state}`;
+        card.id = `card-${step.id}`;
+        card.innerHTML = `
+          <div class="step-icon" id="icon-${step.id}">${meta.icon}</div>
+          <div class="step-body">
+            <div class="step-header">
+              <span class="step-label">${meta.label}</span>
+              <span class="step-badge ${step.state}" id="badge-${step.id}">${step.state}</span>
+            </div>
+            <div class="step-last-log" id="lastlog-${step.id}"></div>
+          </div>
+        `;
+        stepsContainer.appendChild(card);
+        prevLogs[step.id] = 0;
+      });
+    }
+
+    // ── Update cards from status ──────────────────────────────────
+    function updateCards(steps) {
+      const total = steps.length;
+      let doneCount = 0;
+
+      steps.forEach(step => {
+        const card    = document.getElementById(`card-${step.id}`);
+        const badge   = document.getElementById(`badge-${step.id}`);
+        const lastLog = document.getElementById(`lastlog-${step.id}`);
+        if (!card) return;
+
+        // Update card state class
+        card.className = `step-card state-${step.state}`;
+        badge.className = `step-badge ${step.state}`;
+        badge.textContent = step.state;
+
+        // Running: show spinner icon
+        const iconEl = document.getElementById(`icon-${step.id}`);
+        if (step.state === 'running') {
+          iconEl.innerHTML = '<div class="spinner" style="width:18px;height:18px;border-width:2.5px"></div>';
+        } else {
+          iconEl.textContent = (STEP_META[step.id] || {}).icon || '⚙️';
+        }
+
+        // Last log line
+        if (step.log && step.log.length > 0) {
+          lastLog.textContent = step.log[step.log.length - 1];
+        }
+
+        // Append new log lines to console
+        const seen = prevLogs[step.id] || 0;
+        if (step.log && step.log.length > seen) {
+          const newLines = step.log.slice(seen);
+          newLines.forEach(line => appendLog(step.id, line));
+          prevLogs[step.id] = step.log.length;
+        }
+
+        if (step.state === 'done' || step.state === 'warn') doneCount++;
+      });
+
+      // Progress bar
+      const pct = Math.round((doneCount / total) * 100);
+      progressBar.style.width = pct + '%';
+    }
+
+    // ── Append a log line to console ──────────────────────────────
+    function appendLog(stepId, line) {
+      const span = document.createElement('span');
+      span.className = 'log-line';
+      if (line.startsWith('$'))         span.classList.add('cmd');
+      else if (line.startsWith('✓') || line.includes('passed') || line.includes('ready'))
+                                         span.classList.add('success');
+      else if (line.startsWith('✗') || line.toLowerCase().includes('error') || line.toLowerCase().includes('fail'))
+                                         span.classList.add('error');
+      else if (line.startsWith('⚠') || line.toLowerCase().includes('warn'))
+                                         span.classList.add('warn');
+      span.textContent = line;
+      consoleOutput.appendChild(span);
+      // Auto-scroll to bottom
+      consoleOutput.scrollTop = consoleOutput.scrollHeight;
+    }
+
+    // ── Update global status pill ─────────────────────────────────
+    function updateStatus(phase, errorMsg) {
+      globalStatus.className = `status-pill ${phase}`;
+      globalSpinner.style.display = (phase === 'running' || phase === 'starting') ? 'block' : 'none';
+      const labels = {
+        starting: 'Initialising…',
+        running:  'Setup in progress…',
+        done:     '✓ Ready!',
+        error:    '✗ Setup failed',
+      };
+      globalStatusText.textContent = labels[phase] || phase;
+    }
+
+    // ── Show CTA ──────────────────────────────────────────────────
+    function showSuccess(appUrl) {
+      ctaSection.classList.add('visible');
+      ctaBtn.href = appUrl;
+      if (!confettiFired) {
+        confettiFired = true;
+        launchConfetti();
+      }
+    }
+
+    function showError(msg) {
+      ctaSection.classList.add('visible', 'error-state');
+      ctaTitle.textContent = '❌ Setup Failed';
+      ctaSub.textContent = msg || 'An error occurred. Check the console output above for details.';
+      ctaBtn.style.display = 'none';
+    }
+
+    // ── Poll /status ──────────────────────────────────────────────
+    let cardsBuilt = false;
+
+    async function poll() {
+      try {
+        const res  = await fetch('/status');
+        const data = await res.json();
+
+        if (!cardsBuilt && data.steps) {
+          buildCards(data.steps);
+          cardsBuilt = true;
+        }
+        if (data.steps) updateCards(data.steps);
+        updateStatus(data.phase, data.error);
+
+        if (data.phase === 'done' && data.app_ready && prevPhase !== 'done') {
+          showSuccess(data.app_url);
+        }
+        if (data.phase === 'error' && prevPhase !== 'error') {
+          showError(data.error);
+        }
+        prevPhase = data.phase;
+      } catch (e) {
+        // Server might be briefly unavailable — silent retry
+      }
+      setTimeout(poll, POLL_MS);
+    }
+
+    // ── Confetti ──────────────────────────────────────────────────
+    function launchConfetti() {
+      const canvas = document.getElementById('confettiCanvas');
+      const ctx    = canvas.getContext('2d');
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      const colors = ['#6366f1','#22d3ee','#10b981','#f59e0b','#818cf8','#a78bfa'];
+      const pieces = Array.from({ length: 120 }, () => ({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - canvas.height,
+        w: Math.random() * 8 + 4,
+        h: Math.random() * 14 + 6,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        vx: (Math.random() - 0.5) * 3,
+        vy: Math.random() * 4 + 2,
+        rot: Math.random() * Math.PI * 2,
+        rotV: (Math.random() - 0.5) * 0.15,
+        alpha: 1,
+      }));
+
+      let frame = 0;
+      function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pieces.forEach(p => {
+          p.x   += p.vx;
+          p.y   += p.vy;
+          p.rot += p.rotV;
+          if (frame > 80) p.alpha -= 0.015;
+          if (p.y > canvas.height) { p.y = -20; p.x = Math.random() * canvas.width; }
+
+          ctx.save();
+          ctx.globalAlpha = Math.max(0, p.alpha);
+          ctx.translate(p.x, p.y);
+          ctx.rotate(p.rot);
+          ctx.fillStyle = p.color;
+          ctx.fillRect(-p.w/2, -p.h/2, p.w, p.h);
+          ctx.restore();
+        });
+        frame++;
+        if (frame < 160) requestAnimationFrame(draw);
+        else ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+      draw();
+    }
+
+    // ── Kick off ──────────────────────────────────────────────────
+    poll();
+  </script>
+</body>
+</html>

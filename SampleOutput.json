@@ -1,0 +1,264 @@
+{
+    "TestPackageName": "TP_AppointmentList",
+    "TestSuites": {
+        "TS_01": {
+            "Objects": {
+                "Appointment List - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Appointment List": "Ad eius dolore qui perspiciatis tempora assumenda in adipisci dolor magnam ad dicta officiis.",
+                                "Reg No / Name / Mobile / Token No / Doctor": "Thomas Sen",
+                                "Date of Birth": "1979-12-28",
+                                "Period": "Open",
+                                "Created Date Period": "1994-09-04",
+                                "Department": "Cancelled",
+                                "Select Doctor": "Cancelled",
+                                "Visit Type.": "Pending"
+                            }
+                        },
+                        "2": {
+                            "Fields": {
+                                "Appointment List": "Eius sit quis cum in eius dolor quis aut fugit facere exercitationem eaque aliquam itaque commodi ullam aspernatur eos occaecati suscipit facere deleniti architecto optio quo voluptates.",
+                                "Reg No / Name / Mobile / Token No / Doctor": "Harrison Rai",
+                                "Date of Birth": "1979-03-13",
+                                "Period": "Processing",
+                                "Created Date Period": "2018-12-05",
+                                "Department": "Closed",
+                                "Select Doctor": "Completed",
+                                "Visit Type.": "Approved"
+                            }
+                        },
+                        "3": {
+                            "Fields": {
+                                "Appointment List": "Iste rerum cum explicabo pariatur praesentium placeat architecto odio modi doloribus iure earum unde porro dolor eveniet quisquam animi.",
+                                "Reg No / Name / Mobile / Token No / Doctor": "Diya Rattan",
+                                "Date of Birth": "1972-11-07",
+                                "Period": "Open",
+                                "Created Date Period": "1978-05-29",
+                                "Department": "Cancelled",
+                                "Select Doctor": "Cancelled",
+                                "Visit Type.": "On Hold"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        },
+        "TS_2": {
+            "Objects": {
+                "Appointment Referral - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Appointment": "Architecto totam necessitatibus quaerat distinctio libero suscipit odit corporis consequuntur quia molestiae quia incidunt nesciunt facere voluptatum consequuntur.",
+                                "Appointment Referral": "At aliquid autem occaecati recusandae in aperiam fugit voluptatum minus voluptas similique accusamus quam placeat modi eaque odit beatae ipsa iste veritatis soluta ea.",
+                                "Period": "Completed",
+                                "Type": "Open",
+                                "Status": "On Hold",
+                                "Priority": "Cancelled",
+                                "Reg. No": "PAT850800",
+                                "Mobile": "+91 8863794026"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        },
+        "TS_3": {
+            "Objects": {
+                "Doctor List - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Select Department": "Active",
+                                "Select physician": "Pending"
+                            }
+                        },
+                        "2": {
+                            "Fields": {
+                                "Select Department": "Cancelled",
+                                "Select physician": "Submitted"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        },
+        "TS_4": {
+            "Objects": {
+                "Appointment Reminder - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Appointment": "Quis magni autem numquam sapiente magni dicta fugiat cum veritatis ullam ullam nobis laborum beatae facilis voluptates rem dolores dolores necessitatibus aspernatur quasi repellendus.",
+                                "Period": "Inactive"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        },
+        "TS_5": {
+            "Objects": {
+                "Patient Insights - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Appointment": "Quisquam consectetur labore mollitia eaque sit incidunt distinctio molestiae quas dicta est voluptatum officiis ipsa maxime commodi dolore excepturi nihil dolorem dolore architecto occaecati dolorem.",
+                                "searchWord": "Similique architecto dolores pariatur distinctio consequatur vel necessitatibus labore quos rem deleniti.",
+                                "regNum": "PAT207175",
+                                "tokenNumber": "dff1cfb3-8b41-41ca-95fb-f690b9549e31",
+                                "mobileNum": "+91 6161559407",
+                                "Period": "Approved",
+                                "departmentId": "Closed",
+                                "doctorId": "On Hold",
+                                "visitType": "Active",
+                                "patientType": "In Progress",
+                                "status": "Processing"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        },
+        "TS_6": {
+            "Objects": {
+                "Cancelled Appointment - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Reg ID": "f8d83541-c9f4-4434-951e-99bae1ef26cc",
+                                "Mobile No": "+91 7959310341",
+                                "Appointment Date Period": "1979-01-23",
+                                "Appointment": "Omnis explicabo illum sint amet officiis officia aperiam quas reiciendis autem deleniti modi consequuntur.",
+                                "Cancelled Appointment": "+91 6647525534",
+                                "Cancelled Date Period": "2024-08-25",
+                                "mat-select-2": "Eius dolorum unde ipsam similique mollitia amet voluptatum saepe voluptas unde sed cumque laborum distinctio id.",
+                                "mat-select-3": "Cum a hic unde quos eligendi possimus quas quos optio laborum deleniti dolor.",
+                                "Patient Type": "Processing",
+                                "Select Reason": "Pending",
+                                "Name": "Darsh Murthy"
+                            }
+                        },
+                        "2": {
+                            "Fields": {
+                                "Reg ID": "610a5a31-4316-44c6-9bcd-5c82dabe00b4",
+                                "Mobile No": "+91 6832764835",
+                                "Appointment Date Period": "1990-07-20",
+                                "Appointment": "Amet labore ullam minus animi magni sed architecto architecto similique illo velit necessitatibus.",
+                                "Cancelled Appointment": "+91 9056413953",
+                                "Cancelled Date Period": "2005-06-30",
+                                "mat-select-2": "Nisi nulla in nesciunt minima vel dignissimos quaerat dolores id perferendis error et quibusdam asperiores itaque voluptatum voluptatum asperiores distinctio eaque ut sunt sunt fuga culpa.",
+                                "mat-select-3": "Provident nostrum voluptates omnis ab repellendus error optio vel consequatur blanditiis autem mollitia earum non quaerat dignissimos odio eaque laborum temporibus sapiente at incidunt eius.",
+                                "Patient Type": "Processing",
+                                "Select Reason": "Rejected",
+                                "Name": "Gauri De"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        },
+        "TS_7": {
+            "Objects": {
+                "Cancelled Appointment - Search - Search": {
+                    "Login": {
+                        "Values": {
+                            "url": "",
+                            "userid": "",
+                            "password": "",
+                            "mobile no": "",
+                            "branch name": "",
+                            "dashboard url": ""
+                        }
+                    },
+                    "Iterations": {
+                        "1": {
+                            "Fields": {
+                                "Reg ID": "61eb8cb0-af4e-443b-8d02-0d4612382e63",
+                                "Mobile No": "+91 9242388496",
+                                "Appointment Date Period": "2002-06-23",
+                                "Appointment": "Cum ipsam provident natus beatae velit porro corrupti alias fuga mollitia inventore aliquam facilis ut voluptas aliquam facere.",
+                                "Cancelled Appointment": "+91 9328710122",
+                                "Cancelled Date Period": "2023-07-05",
+                                "mat-select-2": "Pariatur explicabo nam soluta voluptate quibusdam unde dolores cum reiciendis debitis impedit debitis unde quos illum pariatur quasi.",
+                                "mat-select-3": "Eaque ratione autem sit similique dolore repellendus itaque esse recusandae dolorem ad deserunt eveniet sint vitae eius odit.",
+                                "Patient Type": "Closed",
+                                "Select Reason": "Approved",
+                                "Name": "Garima Bala"
+                            }
+                        }
+                    },
+                    "Lookups": {}
+                }
+            }
+        }
+    }
+}
