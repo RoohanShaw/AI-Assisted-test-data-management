@@ -1,0 +1,236 @@
+{
+  "patient name": {
+    "field_name": "Patient Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "faiss"
+  },
+  "age": {
+    "field_name": "Age",
+    "category": "Human Age",
+    "generator": "age",
+    "source": "faiss"
+  },
+  "salary": {
+    "field_name": "Salary",
+    "category": "Employee Salary",
+    "generator": "salary",
+    "source": "faiss"
+  },
+  "mrn": {
+    "field_name": "MRN",
+    "category": "Medical Record Number",
+    "generator": "mrn",
+    "source": "faiss"
+  },
+  "reg no / name / mobile / token no / doctor": {
+    "field_name": "Reg No / Name / Mobile / Token No / Doctor",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "appointment": {
+    "field_name": "Appointment",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "appointment referral": {
+    "field_name": "Appointment Referral",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "mobile": {
+    "field_name": "Mobile",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "faiss"
+  },
+  "searchword": {
+    "field_name": "searchWord",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "mobilenum": {
+    "field_name": "mobileNum",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "faiss"
+  },
+  "mobile no": {
+    "field_name": "Mobile No",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "cancelled appointment": {
+    "field_name": "Cancelled Appointment",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "name": {
+    "field_name": "Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "faiss"
+  },
+  "first name": {
+    "field_name": "First Name",
+    "category": "First Name",
+    "generator": "first_name",
+    "source": "faiss"
+  },
+  "middle name": {
+    "field_name": "Middle Name",
+    "category": "Middle Name",
+    "generator": "middle_name",
+    "source": "faiss"
+  },
+  "last name": {
+    "field_name": "Last Name",
+    "category": "Last Name",
+    "generator": "last_name",
+    "source": "faiss"
+  },
+  "alternate mobile": {
+    "field_name": "Alternate Mobile",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "email": {
+    "field_name": "Email",
+    "category": "Email Address",
+    "generator": "email",
+    "source": "faiss"
+  },
+  "relation name": {
+    "field_name": "Relation Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "door no/ street name": {
+    "field_name": "Door No/ Street Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  },
+  "address line1": {
+    "field_name": "Address Line1",
+    "category": "Street Address",
+    "generator": "address",
+    "source": "fallback"
+  },
+  "address line2": {
+    "field_name": "Address Line2",
+    "category": "Street Address",
+    "generator": "address",
+    "source": "fallback"
+  },
+  "pincode": {
+    "field_name": "Pincode",
+    "category": "Postal Code",
+    "generator": "pin_code",
+    "source": "faiss"
+  },
+  "guardian name": {
+    "field_name": "Guardian Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "faiss"
+  },
+  "mobile number": {
+    "field_name": "Mobile Number",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "faiss"
+  },
+  "address": {
+    "field_name": "Address",
+    "category": "Street Address",
+    "generator": "address",
+    "source": "faiss"
+  },
+  "other contact person": {
+    "field_name": "Other Contact Person",
+    "category": "Phone Number",
+    "generator": "phone",
+    "source": "fallback"
+  },
+  "national id number": {
+    "field_name": "National ID Number",
+    "category": "Country",
+    "generator": "country",
+    "source": "fallback"
+  },
+  "pan card": {
+    "field_name": "PAN Card",
+    "category": "PAN Number",
+    "generator": "pan",
+    "source": "faiss"
+  },
+  "aadhar number": {
+    "field_name": "Aadhar Number",
+    "category": "Aadhar Number",
+    "generator": "aadhar",
+    "source": "faiss"
+  },
+  "philhealth pin": {
+    "field_name": "PhilHealth PIN",
+    "category": "Postal Code",
+    "generator": "pin_code",
+    "source": "fallback"
+  },
+  "residential address": {
+    "field_name": "Residential Address",
+    "category": "Street Address",
+    "generator": "address",
+    "source": "fallback"
+  },
+  "office / work address": {
+    "field_name": "Office / Work Address",
+    "category": "Street Address",
+    "generator": "address",
+    "source": "fallback"
+  },
+  "remarks": {
+    "field_name": "Remarks",
+    "category": "Comment",
+    "generator": "remarks",
+    "source": "faiss"
+  },
+  "city": {
+    "field_name": "City",
+    "category": "City",
+    "generator": "city",
+    "source": "faiss"
+  },
+  "registered by": {
+    "field_name": "Registered By",
+    "category": "Patient ID",
+    "generator": "patient_id",
+    "source": "fallback"
+  },
+  "search any text": {
+    "field_name": "Search Any text",
+    "category": "Generic Text",
+    "generator": "description",
+    "source": "fallback"
+  },
+  "insurance card number / membership number": {
+    "field_name": "Insurance Card Number / Membership Number",
+    "category": "IP Address",
+    "generator": "ip_address",
+    "source": "fallback"
+  },
+  "policy name": {
+    "field_name": "Policy Name",
+    "category": "Full Name",
+    "generator": "full_name",
+    "source": "fallback"
+  }
+}

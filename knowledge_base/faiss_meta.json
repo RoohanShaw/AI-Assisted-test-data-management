@@ -1,0 +1,777 @@
+[
+  {
+    "field_name": "Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Full Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Patient Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Employee Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Customer Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "User Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Person Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Candidate Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Applicant Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Member Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Subscriber Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Client Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Guardian Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "First Name",
+    "category": "First Name",
+    "generator": "first_name"
+  },
+  {
+    "field_name": "Given Name",
+    "category": "First Name",
+    "generator": "first_name"
+  },
+  {
+    "field_name": "Last Name",
+    "category": "Last Name",
+    "generator": "last_name"
+  },
+  {
+    "field_name": "Surname",
+    "category": "Last Name",
+    "generator": "last_name"
+  },
+  {
+    "field_name": "Family Name",
+    "category": "Last Name",
+    "generator": "last_name"
+  },
+  {
+    "field_name": "Middle Name",
+    "category": "Middle Name",
+    "generator": "middle_name"
+  },
+  {
+    "field_name": "Age",
+    "category": "Human Age",
+    "generator": "age"
+  },
+  {
+    "field_name": "Patient Age",
+    "category": "Human Age",
+    "generator": "age"
+  },
+  {
+    "field_name": "Employee Age",
+    "category": "Human Age",
+    "generator": "age"
+  },
+  {
+    "field_name": "User Age",
+    "category": "Human Age",
+    "generator": "age"
+  },
+  {
+    "field_name": "Customer Age",
+    "category": "Human Age",
+    "generator": "age"
+  },
+  {
+    "field_name": "Applicant Age",
+    "category": "Human Age",
+    "generator": "age"
+  },
+  {
+    "field_name": "DOB",
+    "category": "Date of Birth",
+    "generator": "dob"
+  },
+  {
+    "field_name": "Date of Birth",
+    "category": "Date of Birth",
+    "generator": "dob"
+  },
+  {
+    "field_name": "Birth Date",
+    "category": "Date of Birth",
+    "generator": "dob"
+  },
+  {
+    "field_name": "Birthday",
+    "category": "Date of Birth",
+    "generator": "dob"
+  },
+  {
+    "field_name": "Date Of Birth",
+    "category": "Date of Birth",
+    "generator": "dob"
+  },
+  {
+    "field_name": "Gender",
+    "category": "Gender",
+    "generator": "gender"
+  },
+  {
+    "field_name": "Sex",
+    "category": "Gender",
+    "generator": "gender"
+  },
+  {
+    "field_name": "Email",
+    "category": "Email Address",
+    "generator": "email"
+  },
+  {
+    "field_name": "Email Address",
+    "category": "Email Address",
+    "generator": "email"
+  },
+  {
+    "field_name": "Email ID",
+    "category": "Email Address",
+    "generator": "email"
+  },
+  {
+    "field_name": "Work Email",
+    "category": "Email Address",
+    "generator": "email"
+  },
+  {
+    "field_name": "Personal Email",
+    "category": "Email Address",
+    "generator": "email"
+  },
+  {
+    "field_name": "Corporate Email",
+    "category": "Email Address",
+    "generator": "email"
+  },
+  {
+    "field_name": "Phone",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Phone Number",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Mobile",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Mobile Number",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Contact Number",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Cell Number",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Telephone",
+    "category": "Phone Number",
+    "generator": "phone"
+  },
+  {
+    "field_name": "Salary",
+    "category": "Employee Salary",
+    "generator": "salary"
+  },
+  {
+    "field_name": "Annual Salary",
+    "category": "Employee Salary",
+    "generator": "salary"
+  },
+  {
+    "field_name": "Monthly Salary",
+    "category": "Monthly Salary",
+    "generator": "monthly_salary"
+  },
+  {
+    "field_name": "CTC",
+    "category": "Employee Salary",
+    "generator": "salary"
+  },
+  {
+    "field_name": "Basic Pay",
+    "category": "Monthly Salary",
+    "generator": "monthly_salary"
+  },
+  {
+    "field_name": "Gross Salary",
+    "category": "Employee Salary",
+    "generator": "salary"
+  },
+  {
+    "field_name": "Net Salary",
+    "category": "Net Salary",
+    "generator": "net_salary"
+  },
+  {
+    "field_name": "Income",
+    "category": "Employee Salary",
+    "generator": "salary"
+  },
+  {
+    "field_name": "Annual Income",
+    "category": "Employee Salary",
+    "generator": "salary"
+  },
+  {
+    "field_name": "Address",
+    "category": "Street Address",
+    "generator": "address"
+  },
+  {
+    "field_name": "Street Address",
+    "category": "Street Address",
+    "generator": "address"
+  },
+  {
+    "field_name": "Home Address",
+    "category": "Street Address",
+    "generator": "address"
+  },
+  {
+    "field_name": "Permanent Address",
+    "category": "Street Address",
+    "generator": "address"
+  },
+  {
+    "field_name": "Current Address",
+    "category": "Street Address",
+    "generator": "address"
+  },
+  {
+    "field_name": "Mailing Address",
+    "category": "Street Address",
+    "generator": "address"
+  },
+  {
+    "field_name": "City",
+    "category": "City",
+    "generator": "city"
+  },
+  {
+    "field_name": "Town",
+    "category": "City",
+    "generator": "city"
+  },
+  {
+    "field_name": "State",
+    "category": "State",
+    "generator": "state"
+  },
+  {
+    "field_name": "Province",
+    "category": "State",
+    "generator": "state"
+  },
+  {
+    "field_name": "Country",
+    "category": "Country",
+    "generator": "country"
+  },
+  {
+    "field_name": "Nation",
+    "category": "Country",
+    "generator": "country"
+  },
+  {
+    "field_name": "PIN Code",
+    "category": "Postal Code",
+    "generator": "pin_code"
+  },
+  {
+    "field_name": "Zip Code",
+    "category": "Postal Code",
+    "generator": "pin_code"
+  },
+  {
+    "field_name": "Postal Code",
+    "category": "Postal Code",
+    "generator": "pin_code"
+  },
+  {
+    "field_name": "ZIP",
+    "category": "Postal Code",
+    "generator": "pin_code"
+  },
+  {
+    "field_name": "Employee ID",
+    "category": "Employee ID",
+    "generator": "employee_id"
+  },
+  {
+    "field_name": "Emp ID",
+    "category": "Employee ID",
+    "generator": "employee_id"
+  },
+  {
+    "field_name": "Staff ID",
+    "category": "Employee ID",
+    "generator": "employee_id"
+  },
+  {
+    "field_name": "Worker ID",
+    "category": "Employee ID",
+    "generator": "employee_id"
+  },
+  {
+    "field_name": "Patient ID",
+    "category": "Patient ID",
+    "generator": "patient_id"
+  },
+  {
+    "field_name": "MRN",
+    "category": "Medical Record Number",
+    "generator": "mrn"
+  },
+  {
+    "field_name": "Medical Record Number",
+    "category": "Medical Record Number",
+    "generator": "mrn"
+  },
+  {
+    "field_name": "Patient Record",
+    "category": "Medical Record Number",
+    "generator": "mrn"
+  },
+  {
+    "field_name": "Aadhar",
+    "category": "Aadhar Number",
+    "generator": "aadhar"
+  },
+  {
+    "field_name": "Aadhar Number",
+    "category": "Aadhar Number",
+    "generator": "aadhar"
+  },
+  {
+    "field_name": "Aadhaar",
+    "category": "Aadhar Number",
+    "generator": "aadhar"
+  },
+  {
+    "field_name": "UID",
+    "category": "Aadhar Number",
+    "generator": "aadhar"
+  },
+  {
+    "field_name": "PAN",
+    "category": "PAN Number",
+    "generator": "pan"
+  },
+  {
+    "field_name": "PAN Number",
+    "category": "PAN Number",
+    "generator": "pan"
+  },
+  {
+    "field_name": "PAN Card",
+    "category": "PAN Number",
+    "generator": "pan"
+  },
+  {
+    "field_name": "Department",
+    "category": "Department",
+    "generator": "department"
+  },
+  {
+    "field_name": "Division",
+    "category": "Department",
+    "generator": "department"
+  },
+  {
+    "field_name": "Team",
+    "category": "Department",
+    "generator": "department"
+  },
+  {
+    "field_name": "Designation",
+    "category": "Job Title",
+    "generator": "job_title"
+  },
+  {
+    "field_name": "Job Title",
+    "category": "Job Title",
+    "generator": "job_title"
+  },
+  {
+    "field_name": "Position",
+    "category": "Job Title",
+    "generator": "job_title"
+  },
+  {
+    "field_name": "Role",
+    "category": "Job Title",
+    "generator": "job_title"
+  },
+  {
+    "field_name": "Joining Date",
+    "category": "Joining Date",
+    "generator": "joining_date"
+  },
+  {
+    "field_name": "Date of Joining",
+    "category": "Joining Date",
+    "generator": "joining_date"
+  },
+  {
+    "field_name": "Start Date",
+    "category": "Start Date",
+    "generator": "start_date"
+  },
+  {
+    "field_name": "End Date",
+    "category": "End Date",
+    "generator": "end_date"
+  },
+  {
+    "field_name": "Date",
+    "category": "Generic Date",
+    "generator": "generic_date"
+  },
+  {
+    "field_name": "Blood Group",
+    "category": "Blood Group",
+    "generator": "blood_group"
+  },
+  {
+    "field_name": "Blood Type",
+    "category": "Blood Group",
+    "generator": "blood_group"
+  },
+  {
+    "field_name": "Bank Account",
+    "category": "Bank Account Number",
+    "generator": "bank_account"
+  },
+  {
+    "field_name": "Account Number",
+    "category": "Bank Account Number",
+    "generator": "bank_account"
+  },
+  {
+    "field_name": "IFSC",
+    "category": "IFSC Code",
+    "generator": "ifsc_code"
+  },
+  {
+    "field_name": "IFSC Code",
+    "category": "IFSC Code",
+    "generator": "ifsc_code"
+  },
+  {
+    "field_name": "Credit Card",
+    "category": "Credit Card Number",
+    "generator": "credit_card"
+  },
+  {
+    "field_name": "Card Number",
+    "category": "Credit Card Number",
+    "generator": "credit_card"
+  },
+  {
+    "field_name": "IP Address",
+    "category": "IP Address",
+    "generator": "ip_address"
+  },
+  {
+    "field_name": "IP",
+    "category": "IP Address",
+    "generator": "ip_address"
+  },
+  {
+    "field_name": "MAC Address",
+    "category": "MAC Address",
+    "generator": "mac_address"
+  },
+  {
+    "field_name": "URL",
+    "category": "Website URL",
+    "generator": "url"
+  },
+  {
+    "field_name": "Website",
+    "category": "Website URL",
+    "generator": "url"
+  },
+  {
+    "field_name": "Company",
+    "category": "Company Name",
+    "generator": "company"
+  },
+  {
+    "field_name": "Company Name",
+    "category": "Company Name",
+    "generator": "company"
+  },
+  {
+    "field_name": "Organization",
+    "category": "Company Name",
+    "generator": "company"
+  },
+  {
+    "field_name": "Username",
+    "category": "Username",
+    "generator": "username"
+  },
+  {
+    "field_name": "Login ID",
+    "category": "Username",
+    "generator": "username"
+  },
+  {
+    "field_name": "User ID",
+    "category": "Username",
+    "generator": "username"
+  },
+  {
+    "field_name": "Password",
+    "category": "Password",
+    "generator": "password"
+  },
+  {
+    "field_name": "Experience",
+    "category": "Work Experience",
+    "generator": "experience"
+  },
+  {
+    "field_name": "Years of Experience",
+    "category": "Work Experience",
+    "generator": "experience"
+  },
+  {
+    "field_name": "Work Experience",
+    "category": "Work Experience",
+    "generator": "experience"
+  },
+  {
+    "field_name": "Nationality",
+    "category": "Nationality",
+    "generator": "nationality"
+  },
+  {
+    "field_name": "Religion",
+    "category": "Religion",
+    "generator": "religion"
+  },
+  {
+    "field_name": "Marital Status",
+    "category": "Marital Status",
+    "generator": "marital_status"
+  },
+  {
+    "field_name": "Qualification",
+    "category": "Education",
+    "generator": "education"
+  },
+  {
+    "field_name": "Education",
+    "category": "Education",
+    "generator": "education"
+  },
+  {
+    "field_name": "Highest Qualification",
+    "category": "Education",
+    "generator": "education"
+  },
+  {
+    "field_name": "Degree",
+    "category": "Education",
+    "generator": "education"
+  },
+  {
+    "field_name": "Diagnosis",
+    "category": "Medical Diagnosis",
+    "generator": "diagnosis"
+  },
+  {
+    "field_name": "Medical Condition",
+    "category": "Medical Diagnosis",
+    "generator": "diagnosis"
+  },
+  {
+    "field_name": "Disease",
+    "category": "Medical Diagnosis",
+    "generator": "diagnosis"
+  },
+  {
+    "field_name": "Prescription",
+    "category": "Prescription",
+    "generator": "prescription"
+  },
+  {
+    "field_name": "Medication",
+    "category": "Medication",
+    "generator": "medication"
+  },
+  {
+    "field_name": "Doctor Name",
+    "category": "Full Name",
+    "generator": "full_name"
+  },
+  {
+    "field_name": "Height",
+    "category": "Height",
+    "generator": "height"
+  },
+  {
+    "field_name": "Weight",
+    "category": "Weight",
+    "generator": "weight"
+  },
+  {
+    "field_name": "Transaction ID",
+    "category": "Transaction ID",
+    "generator": "transaction_id"
+  },
+  {
+    "field_name": "Order ID",
+    "category": "Order ID",
+    "generator": "order_id"
+  },
+  {
+    "field_name": "Invoice Number",
+    "category": "Invoice Number",
+    "generator": "invoice_number"
+  },
+  {
+    "field_name": "Amount",
+    "category": "Transaction Amount",
+    "generator": "amount"
+  },
+  {
+    "field_name": "Price",
+    "category": "Transaction Amount",
+    "generator": "amount"
+  },
+  {
+    "field_name": "Cost",
+    "category": "Transaction Amount",
+    "generator": "amount"
+  },
+  {
+    "field_name": "Total Amount",
+    "category": "Transaction Amount",
+    "generator": "amount"
+  },
+  {
+    "field_name": "GST Number",
+    "category": "GST Number",
+    "generator": "gst_number"
+  },
+  {
+    "field_name": "GSTIN",
+    "category": "GST Number",
+    "generator": "gst_number"
+  },
+  {
+    "field_name": "Remarks",
+    "category": "Comment",
+    "generator": "remarks"
+  },
+  {
+    "field_name": "Comments",
+    "category": "Comment",
+    "generator": "remarks"
+  },
+  {
+    "field_name": "Notes",
+    "category": "Comment",
+    "generator": "remarks"
+  },
+  {
+    "field_name": "Description",
+    "category": "Description",
+    "generator": "description"
+  },
+  {
+    "field_name": "Status",
+    "category": "Status",
+    "generator": "status"
+  },
+  {
+    "field_name": "Active",
+    "category": "Boolean Flag",
+    "generator": "boolean"
+  },
+  {
+    "field_name": "Is Active",
+    "category": "Boolean Flag",
+    "generator": "boolean"
+  },
+  {
+    "field_name": "Enabled",
+    "category": "Boolean Flag",
+    "generator": "boolean"
+  },
+  {
+    "field_name": "ID",
+    "category": "Unique Identifier",
+    "generator": "uuid"
+  },
+  {
+    "field_name": "UUID",
+    "category": "Unique Identifier",
+    "generator": "uuid"
+  },
+  {
+    "field_name": "Reference ID",
+    "category": "Unique Identifier",
+    "generator": "uuid"
+  }
+]
