@@ -40,15 +40,11 @@ Expected output:
 
 - `dist\AI-TestData-Generator.exe`
 
-You can also use the repository script:
-
-```powershell
-.\deploy.bat
-```
-
 This script verifies the executable exists, builds it automatically if missing, and then continues with Windows service installation.
 
 ---
+# Future
+
 
 ## 3. Build steps after every code push
 
